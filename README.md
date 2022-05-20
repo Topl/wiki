@@ -20,9 +20,9 @@ The organizational layout of the site is controlled by the `mkdocs.yml` file. Th
 
 ```
 nav:
-  - 'Nav-Bar Entry'
-    - 'Sidebar Entry'
-      - 'Subgroup Entry'
+  - 'Nav-Bar 1': 'nav1.md'
+    - 'Sidebar 1' 'optional-subpath/sidebar1.md'
+      - 'Subgroup 1': 'optional-subpath/sb1/subgroup1.md'
 ```
 
 There is one additional layer of organization applied; the Markdown section headers appear below their document title in the sidebar.
