@@ -1,0 +1,66 @@
+# the title which appears at the top of the page
+site_name: 'What is Topl?'
+
+# the external URL at which the wiki is accessed, used by the sitemap.xml
+site_url: 'https://wiki.topl.co'
+
+# the navigational layout of the site
+nav:
+  - 'Introduction':
+    - 'Motivation and Vision': 'introduction/motivation.md'
+    - 'Blockchain Use Cases': 'introduction/what-is-blockchain-good-for.md'
+    - 'Another Layer 1': 'introduction/ecosystem-positioning.md'
+    - 'Interoperable By Design': 'introduction/interoperability.md'
+    - 'Topl Glossary': 'introduction/glossary.md'
+  - 'Tokenomics, Governance, and Ecosystem':
+    - 'Arbits': 'tokenomics-and-governance/arbits.md'
+    - 'Community-First Organization': 'tokenomics-and-governance/community-inclusive-organization.md'
+    - 'Services and dApp Development': 'tokenomics-and-governance/services-and-dapp-development.md'
+  - 'Fees, Currency, and Consensus':
+    - 'Stablecoin and Transaction Fees': 'fees-currency-and-consensus/stablecoin-and-transaction-fees.md'
+    - 'Polys': 'fees-currency-and-consensus/polys.md'
+    - 'Transaction Weight': 'fees-currency-and-consensus/weighted-transactions.md'
+    - 'Taktikos Proof-of-Stake': 'fees-currency-and-consensus/taktikos-pos.md'
+  - 'Infrastructure and Tooling':
+    - 'Ribn Wallet': 'infrastructure-and-tooling/ribn.md'
+    - 'Brambl API': 'infrastructure-and-tooling/brambl.md'
+  - 'Core Architecture and Ledger Logic':
+    - 'Unspent Transaction Outputs': 'core-architecture-and-ledger-logic/utxo-ledger.md'
+    - 'Extended UTxOs': 'core-architecture-and-ledger-logic/extended-utxos.md'
+    - 'Ledger Logic': 
+        - 'Dual-Layer Design': 'core-architecture-and-ledger-logic/ledger-logic/dual-layer.md'
+        - 'Quivr Language': 'core-architecture-and-ledger-logic/ledger-logic/smart-tokens.md'
+        - 'Token Creation': 'core-architecture-and-ledger-logic/ledger-logic/token-ontology.md'
+        - 'DAML Smart Contracts': 'core-architecture-and-ledger-logic/ledger-logic/chain-program-engine.md'
+  - 'Contents': 'toc.md'
+  
+# the feature and configuration flags provided by the theme
+theme:
+  name: material
+  favicon: assets/leaves.png
+  logo: assets/leaves.png
+  features:
+    - navigation.instant
+    - navigation.expand
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.tracking
+    - toc.integrate
+    
+# the additional supra-Markdown features that we use
+markdown_extensions:
+  - admonition
+  - attr_list
+  - footnotes
+  - md_in_html
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - tables
+  
+# the added javascript files that we use to support LaTeX
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js

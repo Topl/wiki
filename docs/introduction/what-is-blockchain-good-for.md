@@ -1,0 +1,11 @@
+# What is blockchain good for?
+
+Current applications of blockchain technology (and the associated blockchain designs) feel as though they may be beyond count. From in-game currencies and NFTs using EVM-compatible public chains to post-trade settlement of financial derivatives (usually between just a handful of large banks) using private system's such as Corda, the spectrum is broad. With such a diversity of current use cases, it's fair to ask - _"What is the USP (unique selling proposition) of blockchain? Does one even exist?"_
+
+Topl believes the answer to this question is undoubtedly yes. To understand what this USP is, we turn to the theory of _Disruptive Innovation_ first developed by Joseph Bower and Clayton Christensen and [apply it to blockchains](https://www.linkedin.com/pulse/its-too-early-blockchains-chris-georgen/). The theory of Disruptive Innovation asks, "Is there something that blockchain technology does that was previously impossible?" We put aside for the moment anything that blockchains allow to be done better, easier, or cheaper, and focus on the transformation from _impossible to possible_.
+
+**Blockchains uniquely and exclusively enable the broadest possible set of actors to interact and transact without any need for pre-existing relationships, trust, or a central (clearing) party.**
+
+Never before have users, from the largest corporations to the most disenfranchised individuals been able to form economic relationships without existing trust either in each other or in institutions, relying instead on cryptography and game theory that is universal and fully inclusive. Blockchain provides a censor-proof immutable ledger that all parties can interact with directly and without any intermediaries. _Simply put, the USP of blockchain is trust and direct participation._
+
+None of this is to say that blockchain tech can't also deliver on other claimed value propositions such as reduced costs and increased settlement speeds. Rather it is just that these are _secondary_ benefits, resulting from the USP of blockchain. For example, blockchains reduce the time for settlement or trading not because blockchains are faster but because the increased trust and more direct involvement of the full network of parties results in a settlement process that requires less intermediation and can be finalized with less dispute.
