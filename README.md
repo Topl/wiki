@@ -12,11 +12,11 @@ When writing documents, it can be useful to preview what the site will look like
 4. Activate the newly-created virtual environment: `source venv/bin/activate`
 5. Install the required python dependencies: `pip install --upgrade -r requirements.txt`
 6. Run the MkDocs engine: `mkdocs serve`
-7. You can now view a preview of the site in your browser at [http://127.0.0.1/](http://127.0.0.1:8000/)
+7. You can now view a preview of the site in your browser at [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
 
 ## Adding new pages
 
-The organizational layout of the site is controlled by the `mkdocs.yml` file. The layout is as follows:
+The organizational layout of the site is controlled by the `mkdocs.yml` file. The hierarchy is as follows:
 
 ```
 nav:
