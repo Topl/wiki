@@ -36,7 +36,7 @@ nav:
   
 # the feature and configuration flags provided by the theme
 theme:
-  name: material
+  name: material  # many theme features below are material-specific
   favicon: assets/leaves.png
   logo: assets/leaves.png
   features:
