@@ -1,0 +1,961 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://wiki.topl.co/fees-currency-and-consensus/taktikos-pos/">
+      
+      <link rel="icon" href="../../assets/leaves.png">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.2.6">
+    
+    
+      
+        <title>Taktikos Proof-of-Stake - What is Topl?</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.9d5733d3.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.e6a45f82.min.css">
+        
+      
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#taktikos-pos" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="What is Topl?" class="md-header__button md-logo" aria-label="What is Topl?" data-md-component="logo">
+      
+  <img src="../../assets/leaves.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            What is Topl?
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Taktikos Proof-of-Stake
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../introduction/motivation/" class="md-tabs__link">
+        Introduction
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../tokenomics-and-governance/arbits/" class="md-tabs__link">
+        Tokenomics, Governance, and Ecosystem
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../stablecoin-and-transaction-fees/" class="md-tabs__link md-tabs__link--active">
+        Fees, Currency, and Consensus
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../infrastructure-and-tooling/ribn/" class="md-tabs__link">
+        Infrastructure and Tooling
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../core-architecture-and-ledger-logic/utxo-ledger/" class="md-tabs__link">
+        Core Architecture and Ledger Logic
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../toc/" class="md-tabs__link">
+      Contents
+    </a>
+  </li>
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="What is Topl?" class="md-nav__button md-logo" aria-label="What is Topl?" data-md-component="logo">
+      
+  <img src="../../assets/leaves.png" alt="logo">
+
+    </a>
+    What is Topl?
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1" data-md-state="indeterminate" type="checkbox" id="__nav_1" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_1">
+          Introduction
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Introduction" data-md-level="1">
+        <label class="md-nav__title" for="__nav_1">
+          <span class="md-nav__icon md-icon"></span>
+          Introduction
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../introduction/motivation/" class="md-nav__link">
+        Motivation and Vision
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../introduction/what-is-blockchain-good-for/" class="md-nav__link">
+        Blockchain Use Cases
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../introduction/ecosystem-positioning/" class="md-nav__link">
+        Another Layer 1
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../introduction/interoperability/" class="md-nav__link">
+        Interoperable By Design
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../introduction/glossary/" class="md-nav__link">
+        Topl Glossary
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" data-md-state="indeterminate" type="checkbox" id="__nav_2" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          Tokenomics, Governance, and Ecosystem
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Tokenomics, Governance, and Ecosystem" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Tokenomics, Governance, and Ecosystem
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tokenomics-and-governance/arbits/" class="md-nav__link">
+        Arbits
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tokenomics-and-governance/community-inclusive-organization/" class="md-nav__link">
+        Community-First Organization
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tokenomics-and-governance/services-and-dapp-development/" class="md-nav__link">
+        Services and dApp Development
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          Fees, Currency, and Consensus
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Fees, Currency, and Consensus" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Fees, Currency, and Consensus
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../stablecoin-and-transaction-fees/" class="md-nav__link">
+        Stablecoin and Transaction Fees
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../polys/" class="md-nav__link">
+        Polys
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../weighted-transactions/" class="md-nav__link">
+        Transaction Weight
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Taktikos Proof-of-Stake
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Taktikos Proof-of-Stake
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#foundation" class="md-nav__link">
+    Foundation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#long-tails-and-slot-based-consensus" class="md-nav__link">
+    Long-tails and slot-based consensus
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" data-md-state="indeterminate" type="checkbox" id="__nav_4" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          Infrastructure and Tooling
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Infrastructure and Tooling" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Infrastructure and Tooling
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../infrastructure-and-tooling/ribn/" class="md-nav__link">
+        Ribn Wallet
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../infrastructure-and-tooling/brambl/" class="md-nav__link">
+        Brambl API
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" data-md-state="indeterminate" type="checkbox" id="__nav_5" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5">
+          Core Architecture and Ledger Logic
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Core Architecture and Ledger Logic" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Core Architecture and Ledger Logic
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../core-architecture-and-ledger-logic/utxo-ledger/" class="md-nav__link">
+        Unspent Transaction Outputs
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../core-architecture-and-ledger-logic/extended-utxos/" class="md-nav__link">
+        Extended UTxOs
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_3" data-md-state="indeterminate" type="checkbox" id="__nav_5_3" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5_3">
+          Ledger Logic
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Ledger Logic" data-md-level="2">
+        <label class="md-nav__title" for="__nav_5_3">
+          <span class="md-nav__icon md-icon"></span>
+          Ledger Logic
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../core-architecture-and-ledger-logic/ledger-logic/dual-layer/" class="md-nav__link">
+        Dual-Layer Design
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../core-architecture-and-ledger-logic/ledger-logic/smart-tokens/" class="md-nav__link">
+        Quivr Language
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../core-architecture-and-ledger-logic/ledger-logic/token-ontology/" class="md-nav__link">
+        Token Creation
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../core-architecture-and-ledger-logic/ledger-logic/chain-program-engine/" class="md-nav__link">
+        DAML Smart Contracts
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../toc/" class="md-nav__link">
+        Contents
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+
+<h1 id="taktikos-pos">Taktikos PoS</h1>
+<p>A blockchain’s consensus algorithm plays a crucial role in its overall design. Directly, the consensus algorithm is the set of rules governing block-producing nodes. Indirectly, a blockchain’s choice of consensus algorithm determines its energy footprint and influences transaction speed, throughput, and finality, and level of decentralization.</p>
+<p>The centrality of blockchain consensus leads protocol designers to look to closely balance solid fundamentals with promising advances. This is exactly what Topl’s team sought to (and has) achieved with the creation of Taktikos, the first <em>regularized Nakamoto consensus protocol</em> <sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup>.</p>
+<h3 id="foundation">Foundation</h3>
+<p>Taktikos is built from the foundation established by IOHK in <a href="https://eprint.iacr.org/2017/573.pdf">Ouroboros Praos</a>, and as such inherits key advantages:</p>
+<ul>
+<li>As a pure Nakamoto-style protocol, Taktikos consensus remains robust and can continue to produce blocks with only <span class="arithmatex">\(&gt;\frac{1}{2}\)</span> honest stake. This is in contrast with BFT protocols that can remain in consensus only if more than <span class="arithmatex">\(&gt;\frac{2}{3}\)</span> of the network’s stake is honest.</li>
+<li>Taktikos can make use of a <em>dynamically available and fully permissionless</em> set of stakers with no fundamental maximum on the set of active block producers (as is the case for EOS), or even minimum thresholds for stake ownership (as in Ethereum’s Casper design).</li>
+<li>Among Praos’s key advantages is a provably secure consensus model that does not rely on any trusted execution environments or other hardware-related assumptions. Leveraging a cryptographic construction known as <em>verifiable random functions</em> (VRFs), Praos and later algorithms such as Taktikos do not need to be concerned with hardware advancements that may render them insecure, as is the case with algorithms (such as Ethereum’s Casper and Proof of Time used by Chia) that rely on the alternative construction of <em>verifiable delay functions</em> (VDFs).</li>
+<li>Praos and the larger family of Ouroboros consensus algorithms have been formulated, studied, and verified under the cryptography framework of <em>universal composability</em> (UC). Not only does such a formulation deliver an unsurpassed standard of rigor to security assumptions, it ensures that the base protocol can be <em>composed</em> with additional protocols to extend functionality or interoperate.</li>
+</ul>
+<h3 id="long-tails-and-slot-based-consensus">Long-tails and slot-based consensus</h3>
+<p>One of the key drawbacks of Nakamoto consensus has been high variability in the timing of block production. While the average block time for Bitcoin is set at 10 minutes, this is only an average, and there is a longtail where a new block may not arrive for hours.</p>
+<p><img alt="" src="../../assets/c746053d-67ea-4cfe-ad78-ed0ab855c97a.png" />
+<em>Probability Density Function (PDF) of block time intervals in the Bitcoin network, showing an exponential profile characteristic of the statistical independence of valid proofs discovered in the mining process. Reference: C. Decker and R. Wattenhofer, "Information propagation in the Bitcoin network," IEEE P2P 2013 Proceedings, 2013, pp. 1-10, doi: 10.1109/P2P.2013.6688704.</em></p>
+<p>This exponential distribution can be found across blockchains leveraging Nakamoto consensus, as the process of block creation relies on applying a (near) constant probability from one block to another that a new block is produced in any single moment. Not only does this introduce the problem that the blockchain network will occasionally <em>stall</em>, failing to confirm new transactions for an extended period, but it can incentivize centralization where block producers can benefit from grouping themselves geographically. This was exactly the behavior that was realized with the so-call <em>slot battles</em> in Cardano (<a href="https://forum.cardano.org/t/slot-battles-what-do-they-look-like-what-can-be-done-about-them/41316">reference</a>).</p>
+<p>To solve this problem, Topl developed Taktikos. The  innovation of Taktikos is the introduction of what we have dubbed, <em>local dynamic difficulty</em>. Like other proof-of-stake consensus protocols, Taktikos is <em>round based</em>, meaning that blocks are created and added in set rounds, with forgers each having a stake-dependent probability of producing a valid block to extend the chain in each slot. However, Taktikos is unique in that the probability of block creation is not constant and uses slots to act as a clock to evolve the difficulty of producing a block over time. The goal of this perturbation is to regularize production of new blocks so that blockchain stalls are minimized.</p>
+<p>While many potential difficulty curves were considered and simulated, one curve in particular stands out for the chain growth and security properties it produces, the <em>snowplow curve</em> (below).</p>
+<p><img alt="" src="../../assets/5e6f3421-8417-4b2e-9a04-1c3c8e98c4da.png" />
+<em>The time between blocks is shown on the x-axis, the y-axis corresponds to the value of the active slot coefficient, or difficulty, at a given slot interval <span class="arithmatex">\(\delta\)</span>.</em></p>
+<p>The snowplow curve allows for blocks to be produced across two distinct periods, the Forging Window and the Recovery Phase. The effect of this curve with a a notable discontinuity between the two periods (the Cutoff), is to transform the distribution of new block production from the exponential distribution found in other protocols to a tight bell curve(-like) distribution, named the Taktikkos distribution, centered around the average block time.</p>
+<p><img alt="" src="../../assets/f95a0389-2728-4c0e-b11e-71e25ba07bbe.png" />
+<em>A sample distribution function produced by Taktikos. The distribution goes to zero as <span class="arithmatex">\(\delta\)</span> approaches zero producing significantly fewer asynchronous extensions, or network stalls. The difficulty curve parameters in this example are <span class="arithmatex">\(\gamma = 40\)</span>, <span class="arithmatex">\(\Psi = 0\)</span>, <span class="arithmatex">\(fA = 0.4\)</span>, and <span class="arithmatex">\(fB = 0.05\)</span>.</em></p>
+<p>Beyond more predictable block production, the introduction of Taktikos yields improved chain growth properties that in turn provide faster <em>transaction finality</em>, increased <em>transaction throughput</em>, and reduced <em>adversarial influence</em>. The complete methods by which these benefits are achieved will be detailed in future work. We will describe them more briefly now.</p>
+<p>Faster transaction finality is realized directly through the novel block distribution shown above. Simply put, because the vast majority of blocks are produced within a tight window of time immediately centered on the average block time, the probability that a transaction has been included on anything other than the canonical chain is substantially less than would be the case if blocks were produced according to the more standard exponential distribution. In the case of an exponential distribution describing block production, a transaction will often be included in either a block that is produced too quickly as to fall below the average network delay and thus have a higher probability of being <em>reorged</em> out, or be relegated into a block that does not get added for an expended period.</p>
+<p>Turning to the matter of throughput, the consideration becomes efficiency. Namely, the Taktikos distribution for block production enables blocks to be filled more efficiently. Since block production according to a Taktikos distribution results in fewer block reorgs (for a given block time), transactions are included in fewer blocks on average. As transactions are included in fewer blocks, there is comparatively more space available for non-redundant transactions, thus increasing overall throughput.</p>
+<p>Finally, and perhaps most interestingly, the introduction of local dynamic difficulty according to the snowplow curve reduces the power of adversarial actors in the system. Returning to the snowplow curve and Taktikos distribution, we observe that the period shortly following the production of a block, also known as the forging window, is responsible for the vast majority of block production given the lower difficulty at the beginning of that window. Another way to think about this is to recognize that “blocks beget blocks.”</p>
+<p>The result of blocks begetting blocks is to see that any adversary attempting to subvert the canonical chain by only extending on their own tine (ignoring blocks produced by other nodes) will have a distinct disadvantage in creating blocks even for slots where they would otherwise be eligible to extend the chain because they will probabilistically never be eligible to forge while still in the Forging Window from their previously minted block. The effect of this is that with proper parameterizations, Taktikos will diminish the power of any adversary (with less than 50% of active stake) to equal to less than the influence they would have if they were to behave honestly.</p>
+<p><img alt="" src="../../assets/5983fe30-b5a0-41ae-908c-5f10ca4b120d.png" />
+<em>In this plot we see that the power of a network adversary can be tuned based on the fB, or the difficulty of block production during the Recovery Period.</em></p>
+<p>In summary, while there are several lines of potential further exploration for Taktikos, we believe that parametrizations already obtained and currently being implemented into the Topl Blockchain offer notable improvements in transaction finality, network throughput, and security compared to other POS protocols, all while retaining the strong fundamentals of Ouroboros Praos.</p>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>The term <em>Nakamoto consensus</em> describes an incentive-driven, probabilistic consensus algorithm where chain extension eligibility is determined via a race condition, originally presented in the <a href="https://bitcoin.org/bitcoin.pdf">Bitcoin whitepaper</a>.&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../weighted-transactions/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Transaction Weight" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Transaction Weight
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../../infrastructure-and-tooling/ribn/" class="md-footer__link md-footer__link--next" aria-label="Next: Ribn Wallet" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Ribn Wallet
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.expand", "navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "toc.integrate"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.5e67fbfe.min.js"}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.e87a5f81.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

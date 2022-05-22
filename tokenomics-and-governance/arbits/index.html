@@ -1,0 +1,1000 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://wiki.topl.co/tokenomics-and-governance/arbits/">
+      
+      <link rel="icon" href="../../assets/leaves.png">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.2.6">
+    
+    
+      
+        <title>Arbits - What is Topl?</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.9d5733d3.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.e6a45f82.min.css">
+        
+      
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#arbits" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="What is Topl?" class="md-header__button md-logo" aria-label="What is Topl?" data-md-component="logo">
+      
+  <img src="../../assets/leaves.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            What is Topl?
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Arbits
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../introduction/motivation/" class="md-tabs__link">
+        Introduction
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="./" class="md-tabs__link md-tabs__link--active">
+        Tokenomics, Governance, and Ecosystem
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../fees-currency-and-consensus/stablecoin-and-transaction-fees/" class="md-tabs__link">
+        Fees, Currency, and Consensus
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../infrastructure-and-tooling/ribn/" class="md-tabs__link">
+        Infrastructure and Tooling
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../core-architecture-and-ledger-logic/utxo-ledger/" class="md-tabs__link">
+        Core Architecture and Ledger Logic
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../toc/" class="md-tabs__link">
+      Contents
+    </a>
+  </li>
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="What is Topl?" class="md-nav__button md-logo" aria-label="What is Topl?" data-md-component="logo">
+      
+  <img src="../../assets/leaves.png" alt="logo">
+
+    </a>
+    What is Topl?
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1" data-md-state="indeterminate" type="checkbox" id="__nav_1" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_1">
+          Introduction
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Introduction" data-md-level="1">
+        <label class="md-nav__title" for="__nav_1">
+          <span class="md-nav__icon md-icon"></span>
+          Introduction
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../introduction/motivation/" class="md-nav__link">
+        Motivation and Vision
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../introduction/what-is-blockchain-good-for/" class="md-nav__link">
+        Blockchain Use Cases
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../introduction/ecosystem-positioning/" class="md-nav__link">
+        Another Layer 1
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../introduction/interoperability/" class="md-nav__link">
+        Interoperable By Design
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../introduction/glossary/" class="md-nav__link">
+        Topl Glossary
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          Tokenomics, Governance, and Ecosystem
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Tokenomics, Governance, and Ecosystem" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Tokenomics, Governance, and Ecosystem
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Arbits
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Arbits
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#inflation" class="md-nav__link">
+    Inflation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#revenue-correlated-minting" class="md-nav__link">
+    Revenue Correlated Minting
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#funding-development-through-baseline-inflation" class="md-nav__link">
+    Funding development through baseline inflation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a-bias-toward-productive-contribution" class="md-nav__link">
+    A bias toward productive contribution
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../community-inclusive-organization/" class="md-nav__link">
+        Community-First Organization
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../services-and-dapp-development/" class="md-nav__link">
+        Services and dApp Development
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" data-md-state="indeterminate" type="checkbox" id="__nav_3" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          Fees, Currency, and Consensus
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Fees, Currency, and Consensus" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Fees, Currency, and Consensus
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fees-currency-and-consensus/stablecoin-and-transaction-fees/" class="md-nav__link">
+        Stablecoin and Transaction Fees
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fees-currency-and-consensus/polys/" class="md-nav__link">
+        Polys
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fees-currency-and-consensus/weighted-transactions/" class="md-nav__link">
+        Transaction Weight
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fees-currency-and-consensus/taktikos-pos/" class="md-nav__link">
+        Taktikos Proof-of-Stake
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" data-md-state="indeterminate" type="checkbox" id="__nav_4" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          Infrastructure and Tooling
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Infrastructure and Tooling" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Infrastructure and Tooling
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../infrastructure-and-tooling/ribn/" class="md-nav__link">
+        Ribn Wallet
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../infrastructure-and-tooling/brambl/" class="md-nav__link">
+        Brambl API
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" data-md-state="indeterminate" type="checkbox" id="__nav_5" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5">
+          Core Architecture and Ledger Logic
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Core Architecture and Ledger Logic" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Core Architecture and Ledger Logic
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../core-architecture-and-ledger-logic/utxo-ledger/" class="md-nav__link">
+        Unspent Transaction Outputs
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../core-architecture-and-ledger-logic/extended-utxos/" class="md-nav__link">
+        Extended UTxOs
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_3" data-md-state="indeterminate" type="checkbox" id="__nav_5_3" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5_3">
+          Ledger Logic
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Ledger Logic" data-md-level="2">
+        <label class="md-nav__title" for="__nav_5_3">
+          <span class="md-nav__icon md-icon"></span>
+          Ledger Logic
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../core-architecture-and-ledger-logic/ledger-logic/dual-layer/" class="md-nav__link">
+        Dual-Layer Design
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../core-architecture-and-ledger-logic/ledger-logic/smart-tokens/" class="md-nav__link">
+        Quivr Language
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../core-architecture-and-ledger-logic/ledger-logic/token-ontology/" class="md-nav__link">
+        Token Creation
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../core-architecture-and-ledger-logic/ledger-logic/chain-program-engine/" class="md-nav__link">
+        DAML Smart Contracts
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../toc/" class="md-nav__link">
+        Contents
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+
+<h1 id="arbits">Arbits</h1>
+<p>The Arbit acts as protocol token of Topl’s proof-of-stake blockchain. Arbit ownership entitles parties to participate in block creation and ecosystem governance. Critically, however, Arbits are not used for the payment of transactions fees (i.e. as a currency), drawing a distinction between Arbits and similar PoS protocol tokens such as Ada (Cardano), Dots (Polkadot), and SOL (Solana). We elaborate on this decision to separate staking from payment functionality in a dedicated section on the Poly, Topl’s currency token, but fundamentally this design was driven by recognition of the complex and conflicting dynamics (tokenomics) required in an effective token of either variety.</p>
+<h3 id="inflation">Inflation</h3>
+<p>Through the 13-year history of the blockchain space, questions of inflation have loomed large for every new blockchain project. While these questions initially focused solely on a monetary perspective, as all early protocol tokens were intended to be pure currencies, these questions were altered by the proliferation of ICOs and other launches of blockchain-enabled projects and new proof-of-stake blockchains. As projects began seeking seed or launch capital, inflation questions shifted to be driven by investor concerns over future dilution, with total token caps being sought to protect ownership shares rather than recreate something like the gold standard.</p>
+<p>While we fully recognize the desire for blockchain investors to protect themselves from inflationary dilution, we believe that the sustained viability of the endeavor must be considered primary. A large stake in a worthless asset is still worthless.</p>
+<p>To this end, Topl has designed an issuance plan for Arbits intended to support both robust community involvement and strong continued development and improvement efforts.</p>
+<h3 id="revenue-correlated-minting">Revenue Correlated Minting</h3>
+<p>The first component of Topl’s token issuance protocol establishes the network’s inflation schedule. Instead of electing for either issuing new Arbits at a fixed percentage annually (following Milton Friedman’s K-Percent Rule) or with a fixed number of Arbits per year (after Ethereum’s original disinflationary model), Arbit inflation will be dynamic, based on positive changes in collected transaction fees (<em>protocol revenue</em>). If protocol revenue increases by <span class="arithmatex">\(\Delta\)</span>, the supply of Arbits will also be increased by <span class="arithmatex">\(\Delta\)</span>. However, if protocol revenue decreases, the Arbit supply will remain unchanged.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>While several variables were consider as potential drivers for Arbit supply changes, including Arbit price, protocol revenue was chosen in part because this information in endogenous to the system, meaning there is no oracle required.</p>
+</div>
+<p>Algorithmically, this will be carried out as follows starting at epoch <em>n</em> (more on epochs <a href="../../fees-currency-and-consensus/taktikos-pos/">here</a>):</p>
+<ul>
+<li>When <span class="arithmatex">\(&gt;\frac{2}{3}\)</span> of slots in epoch <span class="arithmatex">\(n\)</span> have elapsed, the protocol will calculate <span class="arithmatex">\(\Delta\)</span> in protocol revenue between epochs <span class="arithmatex">\(n-1\)</span> and <span class="arithmatex">\(n-2\)</span>;</li>
+<li>If <span class="arithmatex">\(\Delta&gt;0\)</span>, the protocol will calculate the number of new Arbits to be issued in epoch <span class="arithmatex">\(n+2\)</span> that will create an inflation rate equal to the current <span class="arithmatex">\(\Delta\)</span>.</li>
+<li>During epoch <span class="arithmatex">\(n+2\)</span>, new Arbits totaling <span class="arithmatex">\(\Delta\times \textit{totalSupplyArbits}\)</span> will be distributed proportionally to block producers.</li>
+</ul>
+<p>The motivation for this choice is network security. In a proof-of-stake blockchain, the ledger’s security is linearly correlated with the percentage of participating stake (that portion involved in block production). What the price-correlated minting achieves is a design in which those token holders not actively participating (either directly or through delegation) in securing the network do not participate in any price appreciation of the asset that they hold. This strengthens the incentive to participate in block production, boosting the network’s security, which, in turn, according to analysis provided by the Fat Protocol Thesis, increases the total value of other assets (currencies, commodities, etc.) that can be hosted on the Topl Blockchain.</p>
+<h3 id="funding-development-through-baseline-inflation">Funding development through baseline inflation</h3>
+<p>Having established our base inflation mechanism for Arbits, we now consider how such inflation can be used to incentivize continued protocol and tooling development in addition to supporting network security. This feat can be accomplished by electing to divert a portion of new Arbit creation into an ecosystem development fund. However, diverting from a fixed available supply will create misalignment between those securing the network and those working to improve it. Instead, we can keep these two interests aligned by revising our inflation equation to the following equation:</p>
+<div class="arithmatex">\[
+(\Delta + B) * \textit{totalArbitSupply}
+\]</div>
+<p>where <span class="arithmatex">\(B\)</span> is the rate of new Arbit minting (chosen by Arbit holders on a periodic basis) that will fill the protocol’s ecosystem development fund.</p>
+<p>While determined through Arbit governance, this rate of inflation will nevertheless be constrained to be within certain ranges depending on the total market capitalization of Arbits.</p>
+<table>
+<thead>
+<tr>
+<th>Market Capitalization</th>
+<th>Annual Inflation Rate <span class="arithmatex">\(B\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&lt;$500MM</td>
+<td>8% - 16%</td>
+</tr>
+<tr>
+<td>$500MM to $2bn</td>
+<td>4% - 8%</td>
+</tr>
+<tr>
+<td>$2bn to $10bn</td>
+<td>2% - 4%</td>
+</tr>
+<tr>
+<td>&gt;$10bn</td>
+<td>&lt;2%</td>
+</tr>
+</tbody>
+</table>
+<h3 id="a-bias-toward-productive-contribution">A bias toward productive contribution</h3>
+<p>Given the non-neutrality in design and potential for high rates of nominal inflation that may be experienced especially in the early years of Topl’s ecosystem development, our differentiated token issuance mechanism requires motivation beyond even that which has been provided.</p>
+<p>While a first defense may claim that the need to continually fund protocol and ancillary development, there are other “permanent incentive models” such as Joel Monegro’s <em>buyback and make</em> proposal. The majority of these existing perpetual funding models are neutral between capital and productive contribution, whereas we seek to bias Topl’s economy toward productive contribution.</p>
+<p>In addition to the desire to prevent Arbit ownership from becoming a rent-seeking activity driving the system toward self-reinforcing centralization, we believe our design’s imposed bias toward those actively securing the network and contributing to its continued development can drive a substantial long-term advantage, a fact hopefully made apparent through the following argument.</p>
+<ol>
+<li>In a proof-of-stake blockchain, the value of the staking token is most fundamentally the net present value discounted cash flows of all transaction fees that the network will collect.</li>
+<li>Maximizing user adoption requires continuous improvement to the blockchain’s technological core and ancillary tooling, as well as consistent investment in community building.</li>
+<li>For a fixed market capitalization, a proof-of-stake blockchain with a higher participation rate for block production can support a greater amount of user-generated assets.</li>
+<li>From 2 &amp; 3, a design that incentivizes both continued development and greater participation in block production will drive greater adoption and usage.</li>
+<li>From 1 &amp; 4, a proof-of-stake blockchain with higher levels of usage will collect more transaction fees and thus have a more valuable staking token.</li>
+</ol>
+<p>It is possible that even in the absence of such direct and preferential incentives, a blockchain’s token holders will themselves act in the protocol’s best interest both in providing robust security and funding continual development. However, such a setup has all the markings of creating a tragedy of the commons, a potentially fatal design flaw to which so-called rational markets have proven reliably vulnerable.</p>
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../../introduction/glossary/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Topl Glossary" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Topl Glossary
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../community-inclusive-organization/" class="md-footer__link md-footer__link--next" aria-label="Next: Community-First Organization" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Community-First Organization
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.expand", "navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "toc.integrate"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.5e67fbfe.min.js"}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.e87a5f81.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
